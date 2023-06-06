@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f7e2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+#balance {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#balanceAmount {
+  font-size: 24px;
+}
+
+#transactions {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#transactions li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#transactions li:last-child {
+  margin-bottom: 0;
+}
+
+.negative {
+  color: red;
+}
+
+.positive {
+  color: green;
+}
+
+#transactionForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#transactionForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#transactionForm input[type="text"],
+#transactionForm input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#transactionForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#transactionForm button:hover {
+  background-color: #45a049;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}
